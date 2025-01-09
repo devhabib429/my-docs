@@ -3,13 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "next build",
-    "export": "next export",
-    "deploy": "npm run export && git add . && git commit -m 'Deploy' && git push origin gh-pages",
-    "dev": "next dev --turbopack",
-    "start": "next start",
-    "lint": "next lint"
-  },
+  "build": "next build",
+  "deploy": "npm run build && git add . && git commit -m 'Deploy' && git push origin gh-pages",
+  "dev": "next dev --turbopack",
+  "start": "next start",
+  "lint": "next lint"
+},
   "dependencies": {
     "next": "15.1.4",
     "next-export-optimize-images": "^4.6.1",
